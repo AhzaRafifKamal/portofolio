@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header design-->
+    <header class="header">
+        <a href="#" class="logo">Ahza</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">home</a>
+            <a href="#about" >about </a>
+            <a href="#skills" >skills</a>
+            <a href="#contact" >contact</a>
+        </nav>
+    </header>
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, My Name </h3>
+            <h1>Ahza Rafif Kamal</h1>
+            <h3>And I'm a <span> web Develpper</span> </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate est, odit pariatur, sed, deleniti dolor rerum esse sapiente eveniet maiores asperiores incidunt repellat odio perferendis?</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+            <a href="#" class="btn"></a>
+        </div>
+
+        <div class="home-img">
+            <img src="fotoAhja.jpeg" alt="">
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="fotoAhja.jpeg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos deserunt ad qui odio sed cupiditate ipsam, dolorem necessitatibus officiis doloribus unde atque? Tempora neque aliquid ea rerum quae assumenda similique, libero harum voluptate praesentium culpa sed porro, optio dolore suscipit vel a, quam dolorem soluta reprehenderit cumque. Nam, numquam unde!</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <!-- Skill section-->
+    <section>
+     <div class="skills">
+        <div class="header-skill">
+            <h1>SKILLS</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="card-skill">
+                <div class="card-text">
+                    <h2>HTML</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Nostrum ex cum quas. Inventore, optio magnam.<br> Modi natus alias, voluptatem repudiandae,<br> maiores perspiciatis quis recusandae reiciendis<br> cupiditate non hic, sunt fugit!</p>
+                </div>
+            </div>
+        
+
+            <div class="card-skill">
+                <div class="card-text">
+                    <h2>CSS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Nostrum ex cum quas. Inventore, optio magnam.<br> Modi natus alias, voluptatem repudiandae,<br> maiores perspiciatis quis recusandae reiciendis<br> cupiditate non hic, sunt fugit!</p>
+                </div>
+            </div>
+      
+
+            <div class="card-skill">
+                <div class="card-text">
+                    <h2>Adobe Illustrator</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae beatae, omnis ipsa consectetur dolorem aspernatur doloribus deserunt quos? Ducimus aut voluptatibus expedita soluta laudantium delectus provident reprehenderit perferendis alias. Id.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</section> 
+
+ <!-- contact section-->
+ <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Emai Addres">
+        </div>
+
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+        <input type="submit" value="Send Massage" class="btn">
+    </form>
+ </section>
+ 
+ <!-- footer section-->
+
+ <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 | All Rights Reserved</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"></a>
+    </div>
+ </footer>
+
+ <script>
+    function WhatsApp(){
+    var nama = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var message = document.getElementById("message").value;
+
+    var walink = "https://wa.me/6281283328346?text="
+    + "Nama :" + nama + "%0a"
+    + "Email : " + email + "%0a"
+    + "Nomor Telepon : " + phone + "%0a"
+    + "Pesan : " + message;
+
+    window.open(walink, '_blank').focus();
+}
+ </script>
+
+</body>
+</html>
